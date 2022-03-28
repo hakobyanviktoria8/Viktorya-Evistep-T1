@@ -397,6 +397,7 @@
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 8px;
+    z-index: 10;
 }
 .timeTracker > form > input:last-child{
     width: 230px;
@@ -405,6 +406,9 @@
     color: #FFF;
     border: none;
     outline: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
 }
 .timeTracker form span{
     font-weight: 400;
@@ -474,3 +478,105 @@
     opacity: 0.33;
     margin: 0 6px;
 }
+
+/* media style 1440px screen*/
+@media only screen and (max-width: 1440px) {
+    .nav,.report, .financeInfoContent,
+    .financePermissionContent,.featuresContent,
+    .footerMenu, .footerContent {
+        width: 90%;
+    }
+    .bgLeft{
+        left: -430px;
+    }
+  }
+
+/* media 1024px screen */
+@media only screen and (max-width: 1024px) {
+    .nav,.report, .financeInfoContent,
+    .financePermissionContent,.featuresContent,
+    .footerMenu, .footerContent {
+        width: 98%;
+    }
+
+    /* card */
+    .card{
+        height: 470px;
+    }
+    .card img{
+        width: 75%;
+    }
+
+    /* report */
+    .report > div:first-child{
+        width: 60%;
+    }
+    .report > div:first-child img{
+        width: 100%;
+    }
+    .report > div:last-child {
+        width: 40%;
+        padding-right: 40px;
+    }
+
+    /* financeInfo */
+    .financeInfo {
+        height: 500px;
+    }
+    .financeInfoContent{
+        padding: 0 40px;
+    }
+    .financeInfoContent > div:first-child {
+        width: 40%;
+    }
+    .financeInfoContent > div:last-child{
+        width: 55%;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .financeInfoContent > div:last-child > img{
+        width: 100%;
+    }
+
+    /* financePermissionContent */
+    .financePermissionContent{
+        padding: 0 40px;
+        margin-bottom: 100px;
+    }
+    .financePermissionContent > div:first-child {
+        width: 40%;
+    }
+    .financePermissionContent > div:last-child{
+        width: 55%;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .financePermissionContent > div:last-child > img{
+        width: 100%;
+    }
+
+    /* .features */
+    .features{
+        padding: 80px 50px;
+        height: 630px;
+        margin-bottom: 100px;
+    }
+    .featuresContent > div {
+        width: 300px;
+        height: 300px;
+        margin: 0 20px;
+    }
+
+    /* footerMenu */
+    .footerMenu > div {
+        width: auto;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .card img {
+        width: 72%;
+    }
+    .financeInfo {
+        height: 560px;
+    }
+  }
