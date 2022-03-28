@@ -32,6 +32,9 @@
     border-radius: 131px;
     padding: 10px 45px;
 }
+#leftMenuBar{
+    display: none;
+}
 
 /* Head main content */
 .head{
@@ -502,9 +505,10 @@
     /* card */
     .card{
         height: 470px;
+        width: 96%;
     }
     .card img{
-        width: 75%;
+        width: 98%;
     }
 
     /* report */
@@ -572,11 +576,111 @@
         width: auto;
     }
   }
-  @media only screen and (max-width: 768px) {
-    .card img {
-        width: 72%;
+
+  /* media style 768px */
+  @media only screen and (min-width: 200px) and (max-width: 768px)  {
+    .card {
+        height: 350px;
     }
     .financeInfo {
         height: 560px;
     }
-  }
+    #leftMenu{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 65px;
+        width: 180px;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 5px 10px #c0c0c0;
+        border-radius: 0 0 0 5px;
+        padding: 10px;
+    }
+    .nav .getStarted{
+        border: none;
+        padding: 0;
+    }
+    .nav a{
+        margin: 5px 15px;
+    }
+    #leftMenuBar{
+        display: block;
+    }
+    #leftMenuBar > img{
+        width: 70px;
+        opacity: 0.8;
+    }
+    .report{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .report > div{
+        width: 80% !important;
+        text-align: center;
+    }
+
+    /* financeInfo */
+    .financeInfo{
+        height: auto;
+        margin-bottom: 100px;
+    }
+    .financeInfoContent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .financeInfoContent> div{
+        width: 80% !important;
+        text-align: center;
+    }
+
+    /* financePermissionContent */
+    .financePermissionContent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .financePermissionContent > div{
+        width: 80% !important;
+        text-align: center;
+    }
+    .financePermissionContentLeft p{
+        text-align: left;
+    }
+    .financePermission > h2 {
+        width: 545px;
+        margin: 0 auto 80px;
+    }
+
+    /* featuresContent */
+    .features {
+        height: auto;
+        margin-bottom: 80px;
+    }
+    .featuresContent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .featuresContent> div{
+        width: 65% !important;
+        margin-bottom: 30px;
+        height: 260px;
+    }
+
+    /* faqs */
+    .faqs {
+        width: 90%;
+        margin-bottom: 100px;
+    }
+    .faqsContent p {
+        width: 96%;
+    }
+
+    /* footer */
+    .footerMenu, .footerContent {
+        width: 90%;
+    }
+  } 
